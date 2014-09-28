@@ -1,16 +1,13 @@
 ; Intro to Sets - Elementary
 ; Sets are collections of unique values.
-; tags - 
-; restricted - 
+; tags -
+; restricted -
 (ns offline-4clojure.p8
   (:use clojure.test))
 
-(def __
-;; your solution here
-)
 
 (defn -main []
   (are [x] x
-(= __ (set '(:a :a :b :c :c :c :c :d :d)))
-(= __ (clojure.set/union #{:a :b :c} #{:b :c :d}))
+(= #{:a :b :c :d} (set '(:a :a :b :c :c :c :c :d :d)))
+(= #{:a :b :c :d} (clojure.set/union #{:a :b :c} #{:b :c :d}))
 ))

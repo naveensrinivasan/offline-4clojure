@@ -1,15 +1,12 @@
 ; Intro to Lists - Elementary
 ; Lists can be constructed with either a function or a quoted form.
-; tags - 
-; restricted - 
+; tags -
+; restricted -
 (ns offline-4clojure.p4
   (:use clojure.test))
 
-(def __
-;; your solution here
-)
 
 (defn -main []
   (are [x] x
-(= (list __) '(:a :b :c))
+(= (list :a :b :c) '(:a :b :c))
 ))
