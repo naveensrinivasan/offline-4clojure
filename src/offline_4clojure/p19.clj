@@ -8,10 +8,10 @@
 (def __
 ;; your solution here
 )
-
+; without using last
 (defn -main []
   (are [x] x
-(= (__ [1 2 3 4 5]) 5)
-(= (__ '(5 4 3)) 3)
-(= (__ ["b" "c" "d"]) "d")
-))
+(= (first (reverse[1 2 3 4 5])) 5)
+(= (first (reverse '(5 4 3))) 3)
+(= (first (reverse ["b" "c" "d"]))"d")
+)

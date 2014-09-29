@@ -1,18 +1,18 @@
 ; Double Down - Elementary
 ; Write a function which doubles a number.
-; tags - 
-; restricted - 
+; tags -
+; restricted -
 (ns offline-4clojure.p15
   (:use clojure.test))
 
-(def __
-;; your solution here
+(defn double [x]
+  (* x 2)
 )
 
 (defn -main []
   (are [x] x
-(= (__ 2) 4)
-(= (__ 3) 6)
-(= (__ 11) 22)
-(= (__ 7) 14)
+(= (double 2) 4)
+(= (double 3) 6)
+(= (double 11) 22)
+(= (double 7) 14)
 ))

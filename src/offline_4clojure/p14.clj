@@ -1,18 +1,14 @@
 ; Intro to Functions - Elementary
 ; Clojure has many different ways to create functions.
-; tags - 
-; restricted - 
+; tags -
+; restricted -
 (ns offline-4clojure.p14
   (:use clojure.test))
 
-(def __
-;; your solution here
-)
-
 (defn -main []
   (are [x] x
-(= __ ((fn add-five [x] (+ x 5)) 3))
-(= __ ((fn [x] (+ x 5)) 3))
-(= __ (#(+ % 5) 3))
-(= __ ((partial + 5) 3))
+(= 8 ((fn add-five [x] (+ x 5)) 3))
+(= 8 ((fn [x] (+ x 5)) 3))
+(= 8 (#(+ % 5) 3))
+(= 8 ((partial + 5) 3))
 ))
