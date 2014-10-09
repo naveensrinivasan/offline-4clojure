@@ -1,17 +1,17 @@
 ; Get the Caps - Easy
 ; Write a function which takes a string and returns a new string containing only the capital letters.
 ; tags - strings
-; restricted - 
+; restricted -
 (ns offline-4clojure.p29
   (:use clojure.test))
 
-(def __
-;; your solution here
-)
+(defn upperOnly [data]
+  (apply str
+(map #(char %) (filter #(and (> % 64 ) (< % 91)) (map int (seq data))))))
 
 (defn -main []
   (are [x] x
-(= (__ "HeLlO, WoRlD!") "HLOWRD")
-(empty? (__ "nothing"))
-(= (__ "$#A(*&987Zf") "AZ")
+(= (upperOnly "HeLlO, WoRlD!") "HLOWRD")
+(empty? (upperOnly "nothing"))
+(= (upperOnly "$#A(*&987Zf") "AZ")
 ))
