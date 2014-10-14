@@ -7,7 +7,9 @@
 
 (defn upperOnly [data]
   (apply str
-(map #(char %) (filter #(and (> % 64 ) (< % 91)) (map int (seq data))))))
+         (map #(char %)
+                (filter #(and (> % 64 ) (< % 91)) ;filters anything between A and Z
+                            (map int (seq data))))))
 
 (defn -main []
   (are [x] x
